@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login form UX</title>
+    <script
+      src="https://kit.fontawesome.com/2a72c5c19d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <section class="register">
+      <h2 class="reg-hdr">Register</h2>
+      <form class="register-form">
+        <div class="username">
+          <label for="username">Enter a username</label>
+          <input
+            id="username"
+            type="text"
+            placeholder="Choose a Username"
+            autocomplete="off"
+          />
+        </div>
+        <div class="pwd-cntr">
+          <label for="password">Enter a password</label>
+          <input
+            id="pwd-input"
+            type="text"
+            placeholder="Choose a password"
+            autocomplete="off"
+          />
+          <div class="pwd-constraint">
+            <p class="pwd-constraint__len">
+              <span class="far fa-check-circle hide"></span> Minimum of 8
+              character
+            </p>
+            <p class="pwd-constraint__small">
+              <span class="far fa-check-circle hide"></span> Contains at least
+              one small character
+            </p>
+            <p class="pwd-constraint__capital">
+              <span class="far fa-check-circle hide"></span> Contains at least
+              one capital character
+            </p>
+            <p class="pwd-constraint__digit">
+              <span class="far fa-check-circle hide"></span> Contains at least
+              one digit
+            </p>
+          </div>
+        </div>
+        <div class="pwd-reenter">
+          <label for="pwd-reenter">Re-enter your password</label>
+          <input type="password" id="pwd-reenter" placeholder="Re-enter password" autocomplete="off">
+        </div>
+        <div class="reg-btn">
+          <button>Register</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
+
